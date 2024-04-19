@@ -1,0 +1,222 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #b7d8eb, #f6a821, #dd4814); 
+    /* Adjust colors as needed */
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: rgb(165, 162, 162);
+
+    /* background-image: url("ubuntu-like-bg.jpg"); */
+     background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+code{
+    color:#DB2D20;
+}
+.terminal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: rgb(9, 3, 0);
+
+}
+
+.terminal-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    height: 90%;
+    padding: 10px;
+}
+
+/* Show scrollbar only when there is overflow */
+.terminal-body::-webkit-scrollbar {
+    width: 20;
+    /* Safari and Chrome */
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    /* background: transparent; */
+    /* Make scrollbar track transparent */
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    /* background: transparent; */
+    /* Make scrollbar thumb transparent */
+}
+
+.terminal-header {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    background-color: #d9d9d9;
+    font-size: 0;
+}
+
+/* Align items to the right */
+.terminal-header .terminal-buttons {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.terminal-header h1 {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: #424242;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Terminal buttons styles */
+.terminal .btn--terminal {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* Green button */
+.green-button {
+    border: 1px solid #6d6d6d;
+    background-color: #868686;
+}
+
+/* Orange button */
+.orange-button {
+    border: 1px solid #4c4c4c;
+    background-color: #656565;
+}
+
+/* Red button */
+.red-button {
+    border: 1px solid #000;
+    background-color: #171717;
+}
+
+
+.textInput {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    font-size: 16px;
+    color: rgb(165, 162, 162);
+}
+
+/* Custom cursor */
+.textInput::selection {
+    background-color: #cccccc;
+    /* Cursor color */
+}
+
+/* Blinking cursor animation */
+@keyframes cursorBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textInput::-webkit-input-placeholder {
+    color: transparent;
+    /* Hide placeholder text */
+}
+
+.textInput:-moz-placeholder {
+    color: transparent;
+    /* Hide placeholder text */
+}
+
+.textInput::-moz-placeholder {
+    color: transparent;
+    /* Hide placeholder text */
+}
+
+.textInput:-ms-input-placeholder {
+    color: transparent;
+    /* Hide placeholder text */
+}
+
+.textInput::placeholder {
+    color: transparent;
+    /* Hide placeholder text */
+}
+
+/* Apply blinking animation to cursor */
+.textInput::selection {
+    animation: cursorBlink 1s infinite;
+}
+
+/* Apply blinking animation to cursor for Firefox */
+.textInput::-moz-selection {
+    animation: cursorBlink 1s infinite;
+}
+
+
+.desktop-icon {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.desktop-icon:active {
+    background-color: rgba(242, 242, 242, 0.35);
+    transform: translateY(1px);
+}
+
+.desktop-icon:hover {
+    transform: translateY(-5px);
+    /* Move icon up slightly on hover */
+}
+
+.desktop-icon img {
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    /* Adjust as needed */
+}
+
+.desktop-icon span {
+    display: block;
+    margin-top: 5px;
+    /* Spacing between icon and text */
+    font-size: 14px;
+    color: #333;
+    /* Text color */
+}
+
+.code-line {
+    color: #01A252
+}
