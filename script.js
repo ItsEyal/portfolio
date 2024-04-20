@@ -98,7 +98,9 @@ const experienceHtml = `
   </ul>
 `;
 
-const aboutHtml = `<p>Hey, I'm Eyal Amitay! 👋 <br /><br/> I'm a fullstack, software engineer who loves to learn new things and accuire random hobbies. <br /> Lets stay in touch!</p>`;
+const aboutHtml = `<p>Hey, I'm Eyal Amitay! 👋 <br /><br/> I'm a fullstack, software engineer who loves to learn new things and accuire random hobbies. <br /> Lets stay in touch! <br/> <br/><a href="mailto:eyaldamitay@gmail.com">
+eyaldamitay@gmail.com
+</a></p>`;
 
 const projectsHtml = "<p>To be added...</p>";
 
